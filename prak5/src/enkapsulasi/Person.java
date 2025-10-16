@@ -1,31 +1,33 @@
 package enkapsulasi;
 
 public class Person {
-    private String nama;
-    private int umur;
+    private String name;
+    private int age;
     private String alamat;
-    
-    public void setNama(String nama) {
-        this.nama = nama;
+
+    // Getter for name
+    public String getName() {
+        return name;
     }
 
-    public String getNama() {
-        return nama;
-    }
-    
-    public void setUmur(int umur) {
-        this.umur = umur;
+    // Setter for name
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getUmur() {
-        return umur;
+    // Getter for age
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age; 
     }
 
-    public void setAlamat(String alamat) {
+    public String getalamat() {
+        return alamat;
+    }
+    public void setalamat(String alamat) {
         this.alamat = alamat;
     }
 
-    public String getAlamat() {
-        return alamat;
-    }
 }
