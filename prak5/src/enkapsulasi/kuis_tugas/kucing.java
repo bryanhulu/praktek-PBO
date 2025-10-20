@@ -1,4 +1,4 @@
-package enkapsulasi.kuis;
+package enkapsulasi.kuis_tugas;
 
 public class kucing {
 
