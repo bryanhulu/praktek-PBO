@@ -1,5 +1,7 @@
 package enkapsulasi.kuis_tugas;
 
+import java.util.Scanner;
+
 public class kucing {
 
     private String nama;
@@ -24,6 +26,23 @@ public class kucing {
     public String getUmur() {
         return umur;
     }
+
+    public void inputdata(){
+        Scanner scanner = new Scanner(System.in);
+        kucing kucing1 = new kucing();
+
+        System.out.print("Masukkan Nama Hewan : ");
+        this.setNama(scanner.nextLine());
+
+        System.out.print("Masukkan Type Hewan : ");
+        this.setType(scanner.nextLine());
+
+        System.out.print("Masukkan Umur Hewan : ");
+        this.setUmur(scanner.nextLine());
+
+            scanner.close();
+    }
+
 public void setUmur(String umurInput) {
     try {
         int umur = Integer.parseInt(umurInput);
@@ -49,6 +68,13 @@ public void setUmur(String umurInput) {
         System.out.println(nama + " yang berumur " + umur + " tahun Sedang bermain");
     }
     public void sleeping() {
-        System.out.println(nama + " yang berumur " + umur + " tahun sedang tidur!");
+        System.out.println(nama + " yang berumur " + umur + " tahun sedang tidur!\n");
     }
+
+    public void showInfo() {
+        System.out.println("\n=== Data Hewan ===");
+        System.out.println("Nama  : " + nama);
+        System.out.println("Jenis : " + type);
+        System.out.println("Umur  : " + umur + " tahun\n");
+}
 }
