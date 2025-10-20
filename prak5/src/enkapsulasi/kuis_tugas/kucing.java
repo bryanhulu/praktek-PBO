@@ -29,7 +29,6 @@ public class kucing {
 
     public void inputdata(){
         Scanner scanner = new Scanner(System.in);
-        kucing kucing1 = new kucing();
 
         System.out.print("Masukkan Nama Hewan : ");
         this.setNama(scanner.nextLine());
